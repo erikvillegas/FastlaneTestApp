@@ -1,0 +1,78 @@
+fastlane_version "1.102.0"
+
+default_platform :ios
+
+platform :ios do
+
+  desc "Deploy a new version to the App Store"
+  lane :deploy do |options|
+
+    version = options[:version]
+
+
+    clear_derived_data
+
+    sh "git pull origin master"
+
+    ensure_git_status_clean
+
+    ensure_no_debug_code(text: "TODO", extensions: [".h", ".m", ".swift"])
+
+    swiftlint(config_file: ".swiftlint.yml")
+
+    scan(devices: ["iPhone 7 Plus"], xcargs: "-only-testing:FastlaneTestAppUnitTests")
+
+
+
+    increment_version_number(version_number: version)
+
+    increment_build_number
+
+    commit_version_bump(message: "bumped version to #{version}")
+
+    push_to_git_remote
+
+    add_git_tag
+
+    push_git_tags
+
+    
+
+
+
+    snapshot(devices: ["iPhone 7 Plus"], languages: ["en-US"], skip_open_summary: true)
+
+    gym
+
+    deliver(app_identifier: "com.eat24.FastlaneTestApp", submit_for_review: true)
+
+
+    
+
+
+
+    
+
+    # sigh(provisioning_name: "Fastlane Test App Store Profile", output_path: "/tmp", app_identifier: "com.eat24.FastlaneTestApp")
+    # update_project_provisioning(profile: "profile.mobileprovision")
+    
+  end
+
+
+  after_all do |lane|
+    message = "Success! 😅"
+
+    notification(title: "Fastlane results", message: message)
+    say message
+  end
+
+  error do |lane, exception|
+    message = "Failure! 😭"
+
+    notification(title: "Fastlane results", message: message)
+    say message
+  end
+end
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md

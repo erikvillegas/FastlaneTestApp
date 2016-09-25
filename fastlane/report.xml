@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+      
+      <testcase classname="fastlane.lanes" name="0: Verifying required fastlane version" time="0.000618">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="1: default_platform" time="0.000256">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="2: clear_derived_data" time="0.042701">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="3: git pull origin master" time="0.674685">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="4: ensure_git_status_clean" time="0.013768">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="5: ensure_no_debug_code" time="0.017836">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="6: swiftlint" time="0.345182">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="7: scan" time="28.540578">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="8: increment_version_number" time="0.761364">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="9: increment_build_number" time="0.713064">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: commit_version_bump" time="0.334287">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: push_to_git_remote" time="2.576311">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: add_git_tag" time="0.013047">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: push_git_tags" time="2.387561">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="14: snapshot" time="38.041951">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="15: gym" time="23.424941">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="16: deliver" time="10.867173">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>
