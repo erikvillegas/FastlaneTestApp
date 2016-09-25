@@ -1,0 +1,9 @@
+app_identifier = "com.eat24.FastlaneTestApp"
+
+apple_dev_portal_id "erikvillegas@aol.com"
+itunes_connect_id "erikv@yelp.com"
+
+team_id "SRLC6K8JRK"
+team_name "Eat24Hours.com Inc"
+
+itc_team_name "Eat24Hours.com Inc"

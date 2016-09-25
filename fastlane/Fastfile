@@ -1,0 +1,40 @@
+fastlane_version "1.102.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    # pod install ?
+  end
+
+  # desc "Runs all the tests"
+  # lane :test do
+  #   scan
+  # end
+
+  desc "Deploy a new version to the App Store"
+  lane :deploy do |options|
+
+    # increment_version_number(version_number: options[:version], xcodeproj: 'eat24hours/eat24hours.xcodeproj')
+    # increment_build_number(xcodeproj: 'eat24hours/eat24hours.xcodeproj')
+
+    # download provisioning profile
+    # sigh(provisioning_name: "EAT24 App Store Profile (Erik)", output_path: "./fastlane", filename: "app_store.mobileprovision")
+
+    # archive and package
+    #gym(scheme: "Eat24", codesigning_identity: "iPhone Distribution: Eat24Hours.com Inc (SRLC6K8JRK)", xcargs: "SET_APP_STORE_PROFILE=1")
+
+    
+  end
+
+  after_all do |lane|
+    # success!
+  end
+
+  error do |lane, exception|
+    # error!
+  end
+end
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
