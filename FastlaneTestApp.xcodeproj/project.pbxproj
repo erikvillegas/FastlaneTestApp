@@ -149,8 +149,7 @@
 				TargetAttributes = {
 					15F8FDCF1D97571900B31BDC = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SRLC6K8JRK;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					15F8FDE31D97571900B31BDC = {
 						CreatedOnToolsVersion = 8.0;
@@ -345,8 +344,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = SRLC6K8JRK;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FastlaneTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eat24.FastlaneTestApp;
@@ -360,8 +359,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = SRLC6K8JRK;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FastlaneTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eat24.FastlaneTestApp;
