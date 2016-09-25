@@ -13,6 +13,7 @@
 		15F8FDDB1D97571900B31BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F8FDDA1D97571900B31BDC /* Assets.xcassets */; };
 		15F8FDDE1D97571900B31BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8FDDC1D97571900B31BDC /* LaunchScreen.storyboard */; };
 		15F8FDE91D97571900B31BDC /* FastlaneTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8FDE81D97571900B31BDC /* FastlaneTestAppUITests.swift */; };
+		15F8FDF51D976D9200B31BDC /* SnapshotHelper2-3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8FDF31D976D7800B31BDC /* SnapshotHelper2-3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		15F8FDE41D97571900B31BDC /* FastlaneTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastlaneTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F8FDE81D97571900B31BDC /* FastlaneTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastlaneTestAppUITests.swift; sourceTree = "<group>"; };
 		15F8FDEA1D97571900B31BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F8FDF31D976D7800B31BDC /* SnapshotHelper2-3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapshotHelper2-3.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				15F8FDD31D97571900B31BDC /* AppDelegate.swift */,
 				15F8FDD51D97571900B31BDC /* ViewController.swift */,
+				15F8FDF31D976D7800B31BDC /* SnapshotHelper2-3.swift */,
 				15F8FDD71D97571900B31BDC /* Main.storyboard */,
 				15F8FDDA1D97571900B31BDC /* Assets.xcassets */,
 				15F8FDDC1D97571900B31BDC /* LaunchScreen.storyboard */,
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F8FDF51D976D9200B31BDC /* SnapshotHelper2-3.swift in Sources */,
 				15F8FDE91D97571900B31BDC /* FastlaneTestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,12 +345,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = SRLC6K8JRK;
 				INFOPLIST_FILE = FastlaneTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eat24.FastlaneTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -354,12 +360,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = SRLC6K8JRK;
 				INFOPLIST_FILE = FastlaneTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eat24.FastlaneTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
@@ -372,7 +380,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eat24.FastlaneTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = FastlaneTestApp;
 			};
 			name = Debug;
@@ -386,7 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eat24.FastlaneTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = FastlaneTestApp;
 			};
 			name = Release;
@@ -410,6 +418,7 @@
 				15F8FDEF1D97571900B31BDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15F8FDF01D97571900B31BDC /* Build configuration list for PBXNativeTarget "FastlaneTestAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +427,7 @@
 				15F8FDF21D97571900B31BDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
