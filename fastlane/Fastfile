@@ -9,12 +9,11 @@ platform :ios do
 
     version = options[:version]
 
-
     clear_derived_data
 
     sh "git pull origin master"
 
-    ensure_git_status_clean
+    # ensure_git_status_clean
 
     ensure_no_debug_code(text: "TODO", extensions: [".h", ".m", ".swift"])
 
