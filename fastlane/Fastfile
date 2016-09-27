@@ -34,9 +34,9 @@ platform :ios do
 
     
 
-    scan(devices: ["iPhone 7 Plus"], xcargs: "-only-testing:FastlaneTestAppUnitTests")
+    scan(devices: ["iPhone 7"], xcargs: "-only-testing:FastlaneTestAppUnitTests")
 
-    snapshot(devices: ["iPhone 7 Plus"], languages: ["en-US"], skip_open_summary: true)
+    snapshot(devices: ["iPhone 7"], languages: ["en-US"], skip_open_summary: true)
 
     gym
 
